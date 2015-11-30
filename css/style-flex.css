@@ -124,7 +124,7 @@ nav {
 section {
     width: 65ex;
     overflow: auto;
-    max-height: 600px;
+    max-height: 650px;
     padding: 0 15px;
     -webkit-flex-basis: 60%;
     flex-basis: 60%;
