@@ -1,28 +1,5 @@
 
 
-/* For mobile phones: */
-@media only screen and (max-width: 768px) {
-    .container{
-        max-width: 700px;
-        min-width:500px;
-    }
-}
-
-/* For tablets: */
-@media only screen and (min-width: 600px) {
-    .container{
-        max-width: 1000px;
-        min-width:700px;
-    }
-}
-
-/* For desktop: */
-@media only screen and (min-width: 768px) {
-    .container{
-        max-width: 120ex;
-        min-width: 100ex;
-    }
-}
 
 header {
     background: white;
@@ -80,7 +57,8 @@ header h1 {
 
 
 .container {
-    margin: 0 auto;   
+    margin: 0 auto;  
+    padding: 0 20px; 
 }
 
 .main {
@@ -105,14 +83,16 @@ nav, section, aside {
     flex-grow: 1;
     -webkit-flex-basis: auto;
     flex-basis: auto;
+    margin-bottom: 10px;
 }
 
 nav, aside {
     padding: 10px;
+    width: 25ex;
 }
 
 nav {
-    width: 25ex;
+    max-width: 25ex;
     overflow: auto;
     -webkit-flex-basis: 20%;
     flex-basis: 20%;
@@ -122,7 +102,8 @@ nav {
 }
 
 section {
-    width: 65ex;
+    max-width: 65ex;
+    min-width:;
     overflow: auto;
     max-height: 650px;
     padding: 0 15px;
@@ -133,7 +114,6 @@ section {
 }
 
 aside {
-    width: 25ex;
     margin-left: 2ex;
     -webkit-flex-basis: 20%;
     flex-basis: 20%;
@@ -151,4 +131,53 @@ aside {
     -ms-transition: all 0.2s ease-out;
     -o-transition: all 0.2s ease-out;
     transition: all 0.2s ease-out;
+}
+
+
+/* For mobile phones: */
+@media only screen and (max-width: 768px) {
+    .container{
+        max-width: 700px;
+        min-width:300px;
+    }
+
+    .content-wrapper{
+        -webkit-flex-direction: column;
+        flex-direction: column;
+        -webkit-flex-grow: 1;
+        flex-grow: 1;
+        -webkit-flex-basis: auto;
+        flex-basis: auto;
+    }
+    nav, aside{
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+    }
+}
+
+/* For tablets: */
+@media only screen and (min-width: 600px) {
+    .container{
+        max-width: 700px;
+        min-width:500px;
+    }
+    .content-wrapper{
+        -webkit-flex-direction: row;
+        flex-direction: row;
+    }
+
+}
+
+/* For desktop: */
+@media only screen and (min-width: 768px) {
+    .container{
+        max-width: 1200px;
+        min-width: 700px;
+    }
+
+    .content-wrapper{
+        -webkit-flex-direction: row;
+        flex-direction: row;
+    }
 }
