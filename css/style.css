@@ -110,7 +110,6 @@ header h1 {
 
 .container {
     margin: 0 auto;   
-    border: 1px solid #666;
 }
 
 .main {
@@ -118,35 +117,30 @@ header h1 {
 }
 
 .content-wrapper{
-    margin: 0 auto;
-    max-height: 640px;
-    border: 1px solid #666;
-    display:table;
-    width: 100%;
     text-align:center;
 }
 
-#menu, .menu-link {
-    -webkit-transition: all 0.2s ease-out;
-    -moz-transition: all 0.2s ease-out;
-    -ms-transition: all 0.2s ease-out;
-    -o-transition: all 0.2s ease-out;
-    transition: all 0.2s ease-out;
+.nav, .content, .aside {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #D1D1D1;
+        text-align: justify;
 }
 
 .nav {
 width: 25ex;
-border: 1px solid #666;
 float: left;
 overflow: auto;
 height: 100%;
-display:table-cell;
+
 }
 
 .content {
     height: 100%;
 width: 65ex;
-border: 1px solid #666;
 overflow: auto;
 display: inline-block;
 margin:0 auto;
@@ -156,5 +150,12 @@ margin:0 auto;
     float:right;
     height: 100%;
 width: 25ex;
-border: 1px solid #666;
+}
+
+#menu, .menu-link {
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
 }
