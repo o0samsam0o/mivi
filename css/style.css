@@ -1,22 +1,14 @@
 
-/* For desktop: */
-@media only screen and (min-width: 768px) {
-    .col-1 {width: 8.33%;}
-    .col-2 {width: 16.66%;}
-    .col-3 {width: 25%;}
-    .col-4 {width: 33.33%;}
-    .col-5 {width: 41.66%;}
-    .col-6 {width: 50%;}
-    .col-7 {width: 58.33%;}
-    .col-8 {width: 66.66%;}
-    .col-9 {width: 75%;}
-    .col-10 {width: 83.33%;}
-    .col-11 {width: 91.66%;}
-    .col-12 {width: 100%;}
+
+/* For mobile phones: */
+@media only screen and (max-width: 768px) {
+    [class*="col-"] {
+        width: 100%;
+    }
 
     .container{
-        max-width: 1000px;
-        min-width:700px;
+        max-width: 700px;
+        min-width:500px;
     }
 }
 
@@ -41,15 +33,24 @@
     }
 }
 
-/* For mobile phones: */
-@media only screen and (max-width: 768px) {
-    [class*="col-"] {
-        width: 100%;
-    }
+/* For desktop: */
+@media only screen and (min-width: 768px) {
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
 
     .container{
-        max-width: 700px;
-        min-width:500px;
+        max-width: 120ex;
+        min-width: 100ex;
     }
 }
 
@@ -127,7 +128,9 @@ header h1 {
     -o-border-radius: 5px;
     border-radius: 5px;
     border: 1px solid #D1D1D1;
-        text-align: justify;
+    text-align: justify;
+    max-height: 650px;
+    min-height: 650px;
 }
 
 .nav {
@@ -139,17 +142,19 @@ height: 100%;
 }
 
 .content {
-    height: 100%;
 width: 65ex;
 overflow: auto;
 display: inline-block;
-margin:0 auto;
 }
 
 .aside {
     float:right;
     height: 100%;
-width: 25ex;
+    width: 25ex;
+}
+
+.doc-title {
+    padding-top: 10px;
 }
 
 #menu, .menu-link {
