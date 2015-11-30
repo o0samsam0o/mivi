@@ -114,7 +114,16 @@ header h1 {
 }
 
 .main {
-    height: 50ex;
+    margin: 80px auto;
+}
+
+.content-wrapper{
+    margin: 0 auto;
+    max-height: 640px;
+    border: 1px solid #666;
+    display:table;
+    width: 100%;
+    text-align:center;
 }
 
 #menu, .menu-link {
@@ -125,14 +134,27 @@ header h1 {
     transition: all 0.2s ease-out;
 }
 
-#nav {
+.nav {
 width: 25ex;
 border: 1px solid #666;
 float: left;
+overflow: auto;
+height: 100%;
+display:table-cell;
 }
 
 .content {
+    height: 100%;
 width: 65ex;
 border: 1px solid #666;
-overflow: scroll;
+overflow: auto;
+display: inline-block;
+margin:0 auto;
+}
+
+.aside {
+    float:right;
+    height: 100%;
+width: 25ex;
+border: 1px solid #666;
 }
