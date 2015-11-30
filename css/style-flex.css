@@ -121,8 +121,13 @@ aside {
     order: 3;
 }
 
-.doc-title {
-    padding-top: 10px;
+.doc-title h2 {
+    float: left;
+}
+
+.actions{
+    float: right;
+    padding-top: 15px;
 }
 
 #menu, .menu-link {
@@ -154,6 +159,10 @@ aside {
         margin-right: 0;
         width: 100%;
     }
+
+    .actions{
+    display:none;
+}
 }
 
 /* For tablets: */
