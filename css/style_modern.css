@@ -84,7 +84,7 @@ nav, section, aside {
 
 nav, aside {
     padding: 10px;
-    width: 25ex;
+    min-width: 25ex;
 }
 
 nav {
